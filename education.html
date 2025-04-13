@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1a1a1a;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .education-page {
+      padding: 80px 40px;
+      background: linear-gradient(to bottom right, #252525, #1a1a1a);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .background-box {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      z-index: 0;
+      box-shadow: 0 0 30px 10px rgba(255, 165, 0, 0.3);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 20px 5px rgba(255, 165, 0, 0.2);
+      }
+      to {
+        box-shadow: 0 0 30px 15px rgba(255, 165, 0, 0.5);
+      }
+    }
+
+    .education-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+      padding: 40px;
+    }
+
+    .education-page h1 {
+      font-size: 48px;
+      background: linear-gradient(to right, orange, deeppink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .education-entry {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .education-entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.4);
+    }
+
+    .education-entry h2 {
+      color: orange;
+      font-size: 24px;
+    }
+
+    .education-entry p {
+      color: #ccc;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="education-page">
+    <div class="background-box"></div>
+    <div class="education-content">
+      <h1>Education</h1>
+      <div class="education-grid">
+        <div class="education-entry">
+          <h2>Bachelor of Technology</h2>
+          <p>MIT Acedemy of Engineering, (Pursuing)</p>
+          <p>CGPA : 9.15</p>
+        </div>
+
+        <div class="education-entry">
+          <h2>Senior Secondary School</h2>
+          <p>Jain Public School , 2022 - 2024</p>
+          <p>Scored : 81.8% in 12th </p>
+        </div>
+
+        <div class="education-entry">
+          <h2>Secondary School</h2>
+          <p>Mount Litera  Zee School , 2012 - 2022</p>
+          <p>Completed education from 1st to 10th standard</p>
+          <p>Scored : 92% in 10th | Cultural Vice Captain of School</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

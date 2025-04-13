@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1a1a1a;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .contact-page {
+      padding: 80px 40px;
+      background: linear-gradient(to bottom right, #252525, #1a1a1a);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .background-box {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      z-index: 0;
+      box-shadow: 0 0 30px 10px rgba(255, 165, 0, 0.3);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 20px 5px rgba(255, 165, 0, 0.2);
+      }
+      to {
+        box-shadow: 0 0 30px 15px rgba(255, 165, 0, 0.5);
+      }
+    }
+
+    .contact-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 40px;
+    }
+
+    .contact-page h1 {
+      font-size: 48px;
+      background: linear-gradient(to right, orange, deeppink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    input {
+      padding: 20px;
+      border-radius: 12px;
+      border: none;
+      font-size: 20px;
+      background-color: #2e2e2e;
+      color: #fff;
+    }
+
+    button {
+      padding: 20px;
+      background: orange;
+      color: #1a1a1a;
+      border: none;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ff9900;
+    }
+
+    .social-links {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-links a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #2e2e2e;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: orange;
+    }
+
+    .social-links img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-page">
+    <div class="background-box"></div>
+    <div class="contact-content">
+      <h1>Contact Me</h1>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Contact Number" required />
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="mailto:devanshagarwal2812@gmail.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/gmail.png" alt="Gmail">
+        </a>
+        <a href="https://www.linkedin.com/in/devansh-agarwal-140088360/" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/agarwaldevansh" target="_blank">
+          <img src="https://img.icons8.com/ios-glyphs/50/ffffff/github.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

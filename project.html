@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1a1a1a;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .projects-page {
+      padding: 80px 40px;
+      background: linear-gradient(to bottom right, #252525, #1a1a1a);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .background-box {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      z-index: 0;
+      box-shadow: 0 0 30px 10px rgba(255, 165, 0, 0.3);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 20px 5px rgba(255, 165, 0, 0.2);
+      }
+      to {
+        box-shadow: 0 0 30px 15px rgba(255, 165, 0, 0.5);
+      }
+    }
+
+    .projects-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+      padding: 40px;
+    }
+
+    .projects-page h1 {
+      font-size: 48px;
+      background: linear-gradient(to right, orange, deeppink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 40px;
+    }
+
+    .project-entry {
+      background-color: rgba(255, 255, 255, 0.05);
+      width: 100%;
+      height: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+    }
+
+    .project-entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+    }
+
+    .project-entry h2 {
+      color: orange;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .project-entry p {
+      color: #ccc;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-page">
+    <div class="background-box"></div>
+    <div class="projects-content">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <div class="project-entry">
+          <h2>Calculato</h2>
+          <p> A basic arithmetic calculator created using shell scripting.</p>
+        </div>
+        <div class="project-entry">
+          <h2>File Manager</h2>
+          <p>A simple command-line based file manager to organize files in directories.</p>
+        </div>
+        <div class="project-entry">
+          <h2>Food Management App</h2>
+          <p>A conceptual app that connects hotels and restaurants with NGOs to donate surplus food.</p>
+        </div>
+        <div class="project-entry">
+          <h2>Digital Portfolio</h2>
+          <p>Developed a responsive digital portfolio using HTML, CSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 20px orange;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: orange;
+      text-shadow: 0 0 10px orange;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 100px 40px 80px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text p {
+      color: #ccc;
+      margin-bottom: 10px;
+      font-size: 48px;
+      background: linear-gradient(to right, orange, deeppink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .gradient {
+      background: none;
+      -webkit-background-clip: initial;
+      -webkit-text-fill-color: initial;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background: linear-gradient(to right, orange, deeppink);
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 0 15px orange;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-image {
+      margin-left: -150px;
+    }
+
+    .hero-image img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 30px orange;
+      margin-top: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 20px orange;
+      }
+      to {
+        box-shadow: 0 0 40px orange;
+      }
+    }
+
+    .about {
+      padding: 60px 40px;
+      background-color: #252525;
+      box-shadow: 0 0 20px orange;
+    }
+
+    .about-text h2 {
+      color: orange;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h3 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p>I AM Devansh Agrawal</p>
+      <h1><span class="gradient">Engineering Student</span></h1>
+      <a href="contact.html" class="contact-btn">Contact Me</a>
+    </div>
+    <div class="hero-image">
+      <img src="WhatsApp Image 2025-04-12 at 16.25.18_c368d09d.jpg" alt="Bleak Peaker" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h3>I am an Engineering Student</h3>
+      <p>
+        I'm a passionate engineering student who thrives on solving real-world problems through code. This portfolio showcases my skills, education, and journey so far. Feel free to explore and connect with me!
+      </p>
+    </div>
+  </section>
+</body>
+</html>
